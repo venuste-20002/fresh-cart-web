@@ -1,0 +1,175 @@
+/* eslint-disable */
+import React from "react";
+import { Meta } from "../components/Meta";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { ShoppingBasket, Package, Utensils } from "lucide-react";
+import { Sprout, Store, Truck, Users, CheckCircle, Leaf } from "lucide-react";
+import Marquee from "react-fast-marquee";
+
+export const AboutUs = () => {
+  const teamMembers = [
+    {
+      name: "Diane INGABIRE",
+      image:
+        "https://res.cloudinary.com/dqsb1ghoz/image/upload/v1760895031/Screenshot_2025-10-19_123210_attdzh.png",
+      position: "Full Stack Developer",
+      linkedIn: "https://www.linkedin.com/in",
+      github: `https://github.com/`,
+    }
+  ];
+
+  const steps = [
+    {
+      icon: <Leaf size={48} color="#2E7D32" />,
+      title: "For Farmers",
+      description: "List and sell produce, access market prices, connect with buyers.",
+    },
+    {
+      icon: <Store size={48} color="#2E7D32" />,
+      title: "For Wholesalers",
+      description: "Source fresh produce directly from farmers at competitive prices.",
+    },
+    {
+      icon: <Truck size={48} color="#2E7D32" />,
+      title: "For Transporters",
+      description: "Offer logistics services and facilitate smooth deliveries.",
+    },
+  ];
+
+
+  const stats = [
+    { number: "1000+", label: "Farmers Connected", icon: <Users /> },
+    { number: "50+", label: "Active Wholesalers", icon: <Store /> },
+    { number: "95%", label: "Successful Deliveries", icon: <CheckCircle /> },
+  ];
+
+  return (
+    <>
+      <Meta title="About us - FRESH-CART" />
+      <div className="about">
+        <div className="about__container">
+          <h1>About FRESH-CART PlatforM </h1>
+          <section className="welcome">
+            <h2>Empowering Farmers, Connecting Markets</h2>
+            <div className="paragraph">
+              <p>
+                <b>FRESH-CART Platform </b> is a digital platform designed to
+                bridge the gap between rural farmers and urban wholesalers,
+                making it easier for farmers to sell their produce and for
+                wholesalers to buy fresh agricultural products directly from the
+                source.
+              </p>
+            </div>
+          </section>
+          {
+            
+          }
+          <section className="mission">
+  <h2>Our Mission</h2>
+  <div className="mission-grid">
+    <div className="mission-item">
+      <span className="number">1</span>
+      <div className="content">
+        <h3>Seamless Marketplace</h3>
+        <p>Create an efficient agricultural marketplace.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">2</span>
+      <div className="content">
+        <h3>Fair Prices</h3>
+        <p>Ensure fair prices for farmers.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">3</span>
+      <div className="content">
+        <h3>Reduce Losses</h3>
+        <p>Reduce post-harvest losses.</p>
+      </div>
+    </div>
+    <div className="mission-item">
+      <span className="number">4</span>
+      <div className="content">
+        <h3>Strengthen Supply Chain</h3>
+        <p>Strengthen Rwanda's food supply chain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="offers">
+    <h2>What We Offer</h2>
+    <div className="offers__steps">
+      {steps.map((step, index) => (
+        <div key={index} className="offers__step">
+          <div className="offers__step-icon">{step.icon}</div>
+          <h3>{step.title}</h3>
+          <p>{step.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+          <section className="works">
+            <h2>How It Works</h2>
+            <div className="works__list">
+              <div className="works__item">
+                <span className="works__item-number">1</span>
+                <p>Farmers register, list their produce, and set prices.</p>
+              </div>
+              <div className="works__item">
+                <span className="works__item-number">2</span>
+                <p>
+                  Wholesalers browse available products, compare options, and
+                  place orders.
+                </p>
+              </div>
+              <div className="works__item">
+                <span className="works__item-number">3</span>
+                <p>
+                  Transactions are securely processed through mobile money or
+                  bank transfers.
+                </p>
+              </div>
+              <div className="works__item">
+                <span className="works__item-number">4</span>
+                <p>
+                  The FRESH-CART Team arranges the delivery of the produce to the wholesalers.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section className="vision">
+            <h2>Our Vision</h2>
+            <div className="paragraph">
+              <p>
+              To revolutionize Rwanda’s agricultural trade by leveraging 
+              technology to create a transparent, profitable, and 
+              sustainable ecosystem for all stakeholders.
+              </p>
+            </div>
+          </section>
+          <section className="team">
+  <h2>Meet the Team</h2>
+  <div className="team__members">
+    {teamMembers.map((member, index) => (
+      <div key={index} className="team__member">
+        <img src={member.image} alt={member.name} />
+        {
+
+        }
+        <div className="team__member__info">
+          <h3>{member.name}</h3>
+          <p>{member.position}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+          {
+
+          }
+        </div>
+      </div>
+    </>
+  );
+};
