@@ -149,21 +149,6 @@ export const AboutUs = () => {
             </div>
           </section>
           <section className="team">
-  <h2>Meet the Team</h2>
-  <div className="team__members">
-    {teamMembers.map((member, index) => (
-      <div key={index} className="team__member">
-        <img src={member.image} alt={member.name} />
-        {
-
-        }
-        <div className="team__member__info">
-          <h3>{member.name}</h3>
-          <p>{member.position}</p>
-        </div>
-      </div>
-    ))}
-  </div>
 </section>
           {
 

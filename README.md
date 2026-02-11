@@ -1,6 +1,5 @@
 # fresh-cart platform
 
-
 ### Installation Steps
 
 #### 2. Install Dependencies:
